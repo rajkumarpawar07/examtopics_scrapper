@@ -1,0 +1,3739 @@
+[
+    {
+      "text": "You are developing a new application on a VM that is on your corporate network. The application will use Java Database Connectivity (JDBC) to connect to Cloud SQL for PostgreSQL. Your Cloud SQL instance is configured with IP address 192.168.3.48, and SSL is disabled. You want to ensure that your application can access your database instance without requiring configuration changes to your database. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Define a connection string using your Google username and password to point to the external (public) IP address of your Cloud SQL instance."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Define a connection string using a database username and password to point to the internal (private) IP address of your Cloud SQL instance."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Define a connection string using Cloud SQL Auth proxy configured with a service account to point to the internal (private) IP address of your Cloud SQL instance."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Define a connection string using Cloud SQL Auth proxy configured with a service account to point to the external (public) IP address of your Cloud SQL instance."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your digital-native business runs its database workloads on Cloud SQL. Your website must be globally accessible 24/7. You need to prepare your Cloud SQL instance for high availability (HA). You want to follow Google-recommended practices. What should you do? (Choose two.)",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Set up manual backups."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Create a PostgreSQL database on-premises as the HA option."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Configure single zone availability for automated backups."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Enable point-in-time recovery."
+        },
+        {
+          "id": "E",
+          "isCorrect": true,
+          "text": "Schedule automated backups."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your company wants to move to Google Cloud. Your current data center is closing in six months. You are running a large, highly transactional Oracle application footprint on VMWare. You need to design a solution with minimal disruption to the current architecture and provide ease of migration to Google Cloud. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Migrate applications and Oracle databases to Google Cloud VMware Engine (VMware Engine)."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Migrate applications and Oracle databases to Compute Engine."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Migrate applications to Cloud SQL."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Migrate applications and Oracle databases to Google Kubernetes Engine (GKE)."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your customer has a global chat application that uses a multi-regional Cloud Spanner instance. The application has recently experienced degraded performance after a new version of the application was launched. Your customer asked you for assistance. During initial troubleshooting, you observed high read latency. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use query parameters to speed up frequently executed queries."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Change the Cloud Spanner configuration from multi-region to single region."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Use SQL statements to analyze SPANNER_SYS.READ_STATS* tables."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use SQL statements to analyze SPANNER_SYS.QUERY_STATS* tables."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your company has PostgreSQL databases on-premises and on Amazon Web Services (AWS). You are planning multiple database migrations to Cloud SQL in an effort to reduce costs and downtime. You want to follow Google-recommended practices and use Google native data migration tools. You also want to closely monitor the migrations as part of the cutover strategy. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Use Database Migration Service to migrate all databases to Cloud SQL."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use Database Migration Service for one-time migrations, and use third-party or partner tools for change data capture (CDC) style migrations."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use data replication tools and CDC tools to enable migration."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use a combination of Database Migration Service and partner tools to support the data migration strategy."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are setting up a Bare Metal Solution environment. You need to update the operating system to the latest version. You need to connect the Bare Metal Solution environment to the internet so you can receive software updates. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Setup a static external IP address in your VPC network."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Set up bring your own IP (BYOIP) in your VPC."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Set up a Cloud NAT gateway on the Compute Engine VM."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Set up Cloud NAT service."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your organization is running a MySQL workload in Cloud SQL. Suddenly you see a degradation in database performance. You need to identify the root cause of the performance degradation. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use Logs Explorer to analyze log data."
+        },
+        {
+          "id": "B",
+          "isCorrect": true,
+          "text": "Use Cloud Monitoring to monitor CPU, memory, and storage utilization metrics."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use Error Reporting to count, analyze, and aggregate the data."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use Cloud Debugger to inspect the state of an application."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You work for a large retail and ecommerce company that is starting to extend their business globally. Your company plans to migrate to Google Cloud. You want to use platforms that will scale easily, handle transactions with the least amount of latency, and provide a reliable customer experience. You need a storage layer for sales transactions and current inventory levels. You want to retain the same relational schema that your existing platform uses. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Store your data in Firestore in a multi-region location, and place your compute resources in one of the constituent regions."
+        },
+        {
+          "id": "B",
+          "isCorrect": true,
+          "text": "Deploy Cloud Spanner using a multi-region instance, and place your compute resources close to the default leader region."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Build an in-memory cache in Memorystore, and deploy to the specific geographic regions where your application resides."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Deploy a Bigtable instance with a cluster in one region and a replica cluster in another geographic region."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You host an application in Google Cloud. The application is located in a single region and uses Cloud SQL for transactional data. Most of your users are located in the same time zone and expect the application to be available 7 days a week, from 6 AM to 10 PM. You want to ensure regular maintenance updates to your Cloud SQL instance without creating downtime for your users. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Configure a maintenance window during a period when no users will be on the system. Control the order of update by setting non-production instances to earlier and production instances to later."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Create your database with one primary node and one read replica in the region."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Enable maintenance notifications for users, and reschedule maintenance activities to a specific time after notifications have been sent."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Configure your Cloud SQL instance with high availability enabled."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your organization is migrating 50 TB Oracle databases to Bare Metal Solution for Oracle. Database backups must be available for quick restore. You also need to have backups available for 5 years. You need to design a cost-effective architecture that meets a recovery time objective (RTO) of 2 hours and recovery point objective (RPO) of 15 minutes. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "1 Create the database on a Bare Metal Solution server with the database running on flash storage.\n2. Keep a local backup copy on all flash storage.\n3. Keep backups older than one day stored in Actifio OnVault storage."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "1 Create the database on a Bare Metal Solution server with the database running on flash storage.\n2. Keep a local backup copy on standard storage.\n3. Keep backups older than one day stored in Actifio OnVault storage."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "1. Create the database on a Bare Metal Solution server with the database running on flash storage.\n2. Keep a local backup copy on standard storage.\n3. Use the Oracle Recovery Manager (RMAN) backup utility to move backups older than one day to a Coldline Storage bucket."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "1. Create the database on a Bare Metal Solution server with the database running on flash storage.\n2. Keep a local backup copy on all flash storage.\n3. Use the Oracle Recovery Manager (RMAN) backup utility to move backups older than one day to an Archive Storage bucket."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your company is evaluating Google Cloud database options for a mission-critical global payments gateway application. The application must be available 24/7 to users worldwide, horizontally scalable, and support open source databases. You need to select an automatically shardable, fully managed database with 99.999% availability and strong transactional consistency. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Select Bare Metal Solution for Oracle."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Select Cloud SQL."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Select Bigtable."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Select Cloud Spanner."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are managing a set of Cloud SQL databases in Google Cloud. Regulations require that database backups reside in the region where the database is created. You want to minimize operational costs and administrative effort. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Configure the automated backups to use a regional Cloud Storage bucket as a custom location."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use the default configuration for the automated backups location."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Disable automated backups, and create an on-demand backup routine to a regional Cloud Storage bucket."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Disable automated backups, and configure serverless exports to a regional Cloud Storage bucket."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your organization has a critical business app that is running with a Cloud SQL for MySQL backend database. Your company wants to build the most fault-tolerant and highly available solution possible. You need to ensure that the application database can survive a zonal and regional failure with a primary region of us-central1 and the backup region of us-east1. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "1. Provision a Cloud SQL for MySQL instance in us-central1-a.\n2. Create a multiple-zone instance in us-west1-b.\n3. Create a read replica in us-east1-c."
+        },
+        {
+          "id": "B",
+          "isCorrect": true,
+          "text": "1. Provision a Cloud SQL for MySQL instance in us-central1-a.\n2. Create a multiple-zone instance in us-central1-b.\n3. Create a read replica in us-east1-b."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "1. Provision a Cloud SQL for MySQL instance in us-central1-a.\n2. Create a multiple-zone instance in us-east-b.\n3. Create a read replica in us-east1-c."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "1. Provision a Cloud SQL for MySQL instance in us-central1-a.\n2. Create a multiple-zone instance in us-east1-b.\n3. Create a read replica in us-central1-b."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are running a mission-critical application on a Cloud SQL for PostgreSQL database with a multi-zonal setup. The primary and read replica instances are in the same region but in different zones. You need to ensure that you split the application load between both instances. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use Cloud Load Balancing for load balancing between the Cloud SQL primary and read replica instances."
+        },
+        {
+          "id": "B",
+          "isCorrect": true,
+          "text": "Use PgBouncer to set up database connection pooling between the Cloud SQL primary and read replica instances."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use HTTP(S) Load Balancing for database connection pooling between the Cloud SQL primary and read replica instances."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use the Cloud SQL Auth proxy for database connection pooling between the Cloud SQL primary and read replica instances."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are using Compute Engine on Google Cloud and your data center to manage a set of MySQL databases in a hybrid configuration. You need to create replicas to scale reads and to offload part of the management operation. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use external server replication."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use Data Migration Service."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Use Cloud SQL for MySQL external replica."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use the mysqldump utility and binary logs."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are running a transactional application on Cloud SQL for PostgreSQL in Google Cloud. The database is running in a high availability configuration within one region. You have encountered issues with data and want to restore to the last known pristine version of the database. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Create a clone database from a read replica database, and restore the clone in the same region."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Create a clone database from a read replica database, and restore the clone into a different zone."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Use the Cloud SQL point-in-time recovery (PITR) feature. Restore the copy from two hours ago to a new database instance."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use the Cloud SQL database import feature. Import last week's dump file from Cloud Storage."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your organization has a ticketing system that needs an online marketing analytics and reporting application. You need to select a relational database that can manage hundreds of terabytes of data to support this new application. Which database should you use?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Cloud SQL"
+        },
+        {
+          "id": "B",
+          "isCorrect": true,
+          "text": "BigQuery"
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Cloud Spanner"
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Bigtable"
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your company is shutting down their data center and migrating several MySQL and PostgreSQL databases to Google Cloud. Your database operations team is severely constrained by ongoing production releases and the lack of capacity for additional on-premises backups. You want to ensure that the scheduled migrations happen with minimal downtime and that the Google Cloud databases stay in sync with the on-premises data changes until the applications can cut over. What should you do? (Choose two.)",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Use Database Migration Service to migrate the databases to Cloud SQL."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use a cross-region read replica to migrate the databases to Cloud SQL."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Use replication from an external server to migrate the databases to Cloud SQL."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use an external read replica to migrate the databases to Cloud SQL."
+        },
+        {
+          "id": "E",
+          "isCorrect": false,
+          "text": "Use a read replica to migrate the databases to Cloud SQL."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your application uses Cloud SQL for MySQL. Your users run reports on data that relies on near-real time; however, the additional analytics caused excessive load on the primary database. You created a read replica for the analytics workloads, but now your users are complaining about the lag in data changes and that their reports are still slow. You need to improve the report performance and shorten the lag in data replication without making changes to the current reports. Which two approaches should you implement? (Choose two.)",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Create secondary indexes on the replica."
+        },
+        {
+          "id": "B",
+          "isCorrect": true,
+          "text": "Create additional read replicas, and partition your analytics users to use different read replicas."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Disable replication on the read replica, and set the flag for parallel replication on the read replica. Re-enable replication and optimize performance by setting flags on the primary instance."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Disable replication on the primary instance, and set the flag for parallel replication on the primary instance. Re-enable replication and optimize performance by setting flags on the read replica."
+        },
+        {
+          "id": "E",
+          "isCorrect": false,
+          "text": "Move your analytics workloads to BigQuery, and set up a streaming pipeline to move data and update BigQuery."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your organization deployed a new version of a critical application that uses Cloud SQL for MySQL with high availability (HA) and binary logging enabled to store transactional information. The latest release of the application had an error that caused massive data corruption in your Cloud SQL for MySQL database. You need to minimize data loss. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Open the Google Cloud Console, navigate to SQL > Backups, and select the last version of the automated backup before the corruption."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Reload the Cloud SQL for MySQL database using the LOAD DATA command to load data from CSV files that were used to initialize the instance."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Perform a point-in-time recovery of your Cloud SQL for MySQL database, selecting a date and time before the data was corrupted."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Fail over to the Cloud SQL for MySQL HA instance. Use that instance to recover the transactions that occurred before the corruption."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your team uses thousands of connected IoT devices to collect device maintenance data for your oil and gas customers in real time. You want to design inspection routines, device repair, and replacement schedules based on insights gathered from the data produced by these devices. You need a managed solution that is highly scalable, supports a multi-cloud strategy, and offers low latency for these IoT devices. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use Firestore with Looker."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use Cloud Spanner with Data Studio."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use MongoD8 Atlas with Charts."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Use Bigtable with Looker."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are designing a database strategy for a new web application. You plan to start with a small pilot in one country and eventually expand to millions of users in a global audience. You need to ensure that the application can run 24/7 with minimal downtime for maintenance. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Use Cloud Spanner in a regional configuration."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use Cloud Spanner in a multi-region configuration."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use Cloud SQL with cross-region replicas."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use highly available Cloud SQL with multiple zones."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are migrating your 2 TB on-premises PostgreSQL cluster to Compute Engine. You want to set up your new environment in an Ubuntu virtual machine instance in Google Cloud and seed the data to a new instance. You need to plan your database migration to ensure minimum downtime. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "1. Take a full export while the database is offline.\n2. Create a bucket in Cloud Storage.\n3. Transfer the dump file to the bucket you just created.\n4. Import the dump file into the Google Cloud primary server.\nB.1. Take a full export while the database is offline.\n2. Create a bucket in Cloud Storage.\n3. Transfer the dump file to the bucket you just created.\n4. Restore the backup into the Google Cloud primary server."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "1. Take a full backup while the database is online.\n2. Create a bucket in Cloud Storage.\n3. Transfer the backup to the bucket you just created.\n4. Restore the backup into the Google Cloud primary server.\n5. Create a recovery.conf file in the $PG_DATA directory.\n6. Stop the source database.\n7. Transfer the write ahead logs to the bucket you created before.\n8. Start the PostgreSQL service.\n9. Wait until Google Cloud primary server syncs with the running primary server."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "1. Take a full export while the database is online.\n2. Create a bucket in Cloud Storage.\n3. Transfer the dump file and write-ahead logs to the bucket you just created.\n4. Restore the dump file into the Google Cloud primary server.\n5. Create a recovery.conf file in the $PG_DATA directory.\n6. Stop the source database.\n7. Transfer the write-ahead logs to the bucket you created before.\n8. Start the PostgreSQL service.\n9. Wait until the Google Cloud primary server syncs with the running primary server."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are designing a new gaming application that uses a highly transactional relational database to store player authentication and inventory data in Google Cloud. You want to launch the game in multiple regions. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Use Cloud Spanner to deploy the database."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use Bigtable with clusters in multiple regions to deploy the database"
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use BigQuery to deploy the database"
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use Cloud SQL with a regional read replica to deploy the database."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your team is building an application that stores and analyzes streaming time series financial data. You need a database solution that can perform time series-based scans with sub-second latency. The solution must scale into the hundreds of terabytes and be able to write up to 10k records per second and read up to 200 MB per second. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use Firestore."
+        },
+        {
+          "id": "B",
+          "isCorrect": true,
+          "text": "Use Bigtable"
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use BigQuery."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use Cloud Spanner."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You want to migrate your on-premises PostgreSQL database to Compute Engine. You need to migrate this database with the minimum downtime possible. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Perform a full backup of your on-premises PostgreSQL, and then, in the migration window, perform an incremental backup."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Create a read replica on Cloud SQL, and then promote it to a read/write standalone instance."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use Database Migration Service to migrate your database."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Create a hot standby on Compute Engine, and use PgBouncer to switch over the connections."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You have a Cloud SQL instance (DB-1) with two cross-region read replicas (DB-2 and DB-3). During a business continuity test, the primary instance (DB-1) was taken offline and a replica (DB-2) was promoted. The test has concluded and you want to return to the pre-test configuration. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Bring DB-1 back online."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Delete DB-1, and re-create DB-1 as a read replica in the same region as DB-1."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Delete DB-2 so that DB-1 automatically reverts to the primary instance."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Create DB-4 as a read replica in the same region as DB-1, and promote DB-4 to primary."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are designing a physician portal app in Node.js. This application will be used in hospitals and clinics that might have intermittent internet connectivity. If a connectivity failure occurs, the app should be able to query the cached data. You need to ensure that the application has scalability, strong consistency, and multi-region replication. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Use Firestore and ensure that the PersistenceEnabled option is set to true."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use Memorystore for Memcached."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use Pub/Sub to synchronize the changes from the application to Cloud Spanner."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use Table.read with the exactStaleness option to perform a read of rows in Cloud Spanner."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are managing a Cloud SQL for PostgreSQL instance in Google Cloud. You need to test the high availability of your Cloud SQL instance by performing a failover. You want to use the cloud command. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Use gcloud sql instances failover <PrimaryInstanceName>."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use gcloud sql instances failover <ReplicaInstanceName>."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use gcloud sql instances promote-replica <PrimaryInstanceName>."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use gcloud sql instances promote-replica <ReplicaInstanceName>."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your company is migrating their MySQL database to Cloud SQL and cannot afford any planned downtime during the month of December. The company is also concerned with cost, so you need the most cost-effective solution. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Open a support ticket in Google Cloud to prevent any maintenance in that MySQL instance during the month of December."
+        },
+        {
+          "id": "B",
+          "isCorrect": true,
+          "text": "Use Cloud SQL maintenance settings to prevent any maintenance during the month of December."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Create MySQL read replicas in different zones so that, if any downtime occurs, the read replicas will act as the primary instance during the month of December."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Create a MySQL regional instance so that, if any downtime occurs, the standby instance will act as the primary instance during the month of December."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your organization has a security policy to ensure that all Cloud SQL for PostgreSQL databases are secure. You want to protect sensitive data by using a key that meets specific locality or residency requirements. Your organization needs to control the key's lifecycle activities. You need to ensure that data is encrypted at rest and in transit. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Create the database with Google-managed encryption keys."
+        },
+        {
+          "id": "B",
+          "isCorrect": true,
+          "text": "Create the database with customer-managed encryption keys."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Create the database persistent disk with Google-managed encryption keys."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Create the database persistent disk with customer-managed encryption keys."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are configuring a brand new Cloud SQL for PostgreSQL database instance in Google Cloud. Your application team wants you to deploy one primary instance, one standby instance, and one read replica instance. You need to ensure that you are following Google-recommended practices for high availability. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Configure the primary instance in zone A, the standby instance in zone C, and the read replica in zone B, all in the same region."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Configure the primary and standby instances in zone A and the read replica in zone B, all in the same region."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Configure the primary instance in one region, the standby instance in a second region, and the read replica in a third region."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Configure the primary, standby, and read replica instances in zone A, all in the same region."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your organization has a production Cloud SQL for MySQL instance. Your instance is configured with 16 vCPUs and 104 GB of RAM that is running between 90% and 100% CPU utilization for most of the day. You need to scale up the database and add vCPUs with minimal interruption and effort. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Issue a gcloud sql instances patch command to increase the number of vCPUs."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Update a MySQL database flag to increase the number of vCPUs."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Issue a gcloud compute instances update command to increase the number of vCPUs."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Back up the database, create an instance with additional vCPUs, and restore the database."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "An analytics team needs to read data out of Cloud SQL for SQL Server and update a table in Cloud Spanner. You need to create a service account and grant least privilege access using predefined roles. What roles should you assign to the service account?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "roles/cloudsql.viewer and roles/spanner.databaseUser"
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "roles/cloudsql.editor and roles/spanner.admin"
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "roles/cloudsql.client and roles/spanner.databaseReader"
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "roles/cloudsql.instanceUser and roles/spanner.databaseUser"
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your application follows a microservices architecture and uses a single large Cloud SQL instance, which is starting to have performance issues as your application grows. in the Cloud Monitoring dashboard, the CPU utilization looks normal You want to follow Google-recommended practices to resolve and prevent these performance issues while avoiding any major refactoring. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use Cloud Spanner instead of Cloud SQL."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Increase the number of CPUs for your instance."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Increase the storage size for the instance."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use many smaller Cloud SQL instances."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You have deployed a Cloud SQL for SQL Server instance. In addition, you created a cross-region read replica for disaster recovery (DR) purposes. Your company requires you to maintain and monitor a recovery point objective (RPO) of less than 5 minutes. You need to verify that your cross-region read replica meets the allowed RPO. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use Cloud SQL instance monitoring."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use the Cloud Monitoring dashboard with available metrics from Cloud SQL."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use Cloud SQL logs."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Use the SQL Server Always On Availability Group dashboard."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You need to redesign the architecture of an application that currently uses Cloud SQL for PostgreSQL. The users of the application complain about slow query response times. You want to enhance your application architecture to offer sub-millisecond query latency. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Configure Firestore, and modify your application to offload queries."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Configure Bigtable, and modify your application to offload queries."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Configure Cloud SQL for PostgreSQL read replicas to offload queries."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Configure Memorystore, and modify your application to offload queries."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You support a consumer inventory application that runs on a multi-region instance of Cloud Spanner. A customer opened a support ticket to complain about slow response times. You notice a Cloud Monitoring alert about high CPU utilization. You want to follow Google-recommended practices to address the CPU performance issue. What should you do first?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Increase the number of processing units."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Modify the database schema, and add additional indexes."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Shard data required by the application into multiple instances."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Decrease the number of processing units."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your company is migrating the existing infrastructure for a highly transactional application to Google Cloud. You have several databases in a MySQL database instance and need to decide how to transfer the data to Cloud SQL. You need to minimize the downtime for the migration of your 500 GB instance. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "1. Create a Cloud SQL for MySQL instance for your databases, and configure Datastream to stream your database changes to Cloud SQL.\n2. Select the Backfill historical data check box on your stream configuration to initiate Datastream to backfill any data that is out of sync between the source and destination.\n3. Delete your stream when all changes are moved to Cloud SQL for MySQL, and update your application to use the new instance."
+        },
+        {
+          "id": "B",
+          "isCorrect": true,
+          "text": "1. Create migration job using Database Migration Service.\n2. Set the migration job type to Continuous, and allow the databases to complete the full dump phase and start sending data in change data capture (CDC) mode.\n3. Wait for the replication delay to minimize, initiate a promotion of the new Cloud SQL instance, and wait for the migration job to complete.\n4. Update your application connections to the new instance."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "1. Create migration job using Database Migration Service.\n2. Set the migration job type to One-time, and perform this migration during a maintenance window.\n3. Stop all write workloads to the source database and initiate the dump. Wait for the dump to be loaded into the Cloud SQL destination database and the destination database to be promoted to the primary database.\n4. Update your application connections to the new instance."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "1. Use the mysqldump utility to manually initiate a backup of MySQL during the application maintenance window.\n2. Move the files to Cloud Storage, and import each database into your Cloud SQL instance.\n3. Continue to dump each database until all the databases are migrated.\n4. Update your application connections to the new instance."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your retail organization is preparing for the holiday season. Use of catalog services is increasing, and your DevOps team is supporting the Cloud SQL databases that power a microservices-based application. The DevOps team has added instrumentation through Sqlcommenter. You need to identify the root cause of why certain microservice calls are failing. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Watch Query Insights for long running queries."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Watch the Cloud SQL instance monitor for CPU utilization metrics."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Watch the Cloud SQL recommenders for overprovisioned instances."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Watch Cloud Trace for application requests that are failing."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are working on a new centralized inventory management system to track items available in 200 stores, which each have 500 GB of data. You are planning a gradual rollout of the system to a few stores each week. You need to design an SQL database architecture that minimizes costs and user disruption during each regional rollout and can scale up or down on nights and holidays. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use Oracle Real Application Cluster (RAC) databases on Bare Metal Solution for Oracle."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use sharded Cloud SQL instances with one or more stores per database instance."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use a Biglable cluster with autoscaling."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Use Cloud Spanner with a custom autoscaling solution."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You want to migrate an on-premises 100 TB Microsoft SQL Server database to Google Cloud over a 1 Gbps network link. You have 48 hours allowed downtime to migrate this database. What should you do? (Choose two.)",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Use a change data capture (CDC) migration strategy."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Move the physical database servers from on-premises to Google Cloud."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Keep the network bandwidth at 1 Gbps, and then perform an offline data migration."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Increase the network bandwidth to 2 Gbps, and then perform an offline data migration."
+        },
+        {
+          "id": "E",
+          "isCorrect": false,
+          "text": "Increase the network bandwidth to 10 Gbps, and then perform an offline data migration."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are choosing a new database backend for an existing application. The current database is running PostgreSQL on an on-premises VM and is managed by a database administrator and operations team. The application data is relational and has light traffic. You want to minimize costs and the migration effort for this application. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Migrate the existing database to Firestore."
+        },
+        {
+          "id": "B",
+          "isCorrect": true,
+          "text": "Migrate the existing database to Cloud SQL for PostgreSQL."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Migrate the existing database to Cloud Spanner."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Migrate the existing database to PostgreSQL running on Compute Engine."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your company is using Cloud SQL for MySQL with an internal (private) IP address and wants to replicate some tables into BigQuery in near-real time for analytics and machine learning. You need to ensure that replication is fast and reliable and uses Google-managed services. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Develop a custom data replication service to send data into BigQuery."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use Cloud SQL federated queries."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use Database Migration Service to replicate tables into BigQuery."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Use Datastream to capture changes, and use Dataflow to write those changes to BigQuery."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are designing a database architecture for a global application that stores information about public parks worldwide. The application uses the database for read-only purposes, and a centralized batch job updates the database nightly. You want to select an open source, SQL-compliant database. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use Bigtable with multi-region clusters."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use Memorystore for Redis with multi-zones within a region."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Use Cloud SQL for PostgreSQL with cross-region replicas."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use Cloud Spanner with multi-region configuration."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "During an internal audit, you realized that one of your Cloud SQL for MySQL instances does not have high availability (HA) enabled. You want to follow Google-recommended practices to enable HA on your existing instance. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Create a new Cloud SQL for MySQL instance, enable HA, and use the export and import option to migrate your data."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Create a new Cloud SQL for MySQL instance, enable HA, and use Cloud Data Fusion to migrate your data."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Use the gcloud instances patch command to update your existing Cloud SQL for MySQL instance."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Shut down your existing Cloud SQL for MySQL instance, and enable HA."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are the database administrator of a Cloud SQL for PostgreSQL instance that has pgaudit disabled. Users are complaining that their queries are taking longer to execute and performance has degraded over the past few months. You need to collect and analyze query performance data to help identity slow-running queries. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "View Cloud SQL operations to view historical query information."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "White a Logs Explorer query to identify database queries with high execution times."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Review application logs to identify database calls."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Use the Query Insights dashboard to identify high execution times."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your organization stores marketing data such as customer preferences and purchase history on Bigtable. The consumers of this database are predominantly data analysts and operations users. You receive a service ticket from the database operations department citing poor database performance between 9 AM-10 AM every day. The application team has confirmed no latency from their logs. A new cohort of pilot users that is testing a dataset loaded from a third-party data provider is experiencing poor database performance. Other users are not affected. You need to troubleshoot the issue. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Isolate the data analysts and operations user groups to use different Bigtable instances."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Check the Cloud Monitoring table/bytes_used metric from Bigtable."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Use Key Visualizer for Bigtable."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Add more nodes to the Bigtable cluster."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are managing a Cloud SQL for MySQL environment in Google Cloud. You have deployed a primary instance in Zone A and a read replica instance in Zone B, both in the same region. You are notified that the replica instance in Zone B was unavailable for 10 minutes. You need to ensure that the read replica instance is still working. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use the Google Cloud Console or gcloud CLI to manually create a new clone database."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use the Google Cloud Console or gcloud CLI to manually create a new failover replica from backup."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Verify that the new replica is created automatically."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Start the original primary instance and resume replication."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are designing a highly available (HA) Cloud SQL for PostgreSQL instance that will be used by 100 databases. Each database contains 80 tables that were migrated from your on-premises environment to Google Cloud. The applications that use these databases are located in multiple regions in the US, and you need to ensure that read and write operations have low latency. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Deploy 2 Cloud SQL instances in the us-central1 region with HA enabled, and create read replicas in us-east1 and us-west1."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Deploy 2 Cloud SQL instances in the us-central1 region, and create read replicas in us-east1 and us-west1."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Deploy 4 Cloud SQL instances in the us-central1 region with HA enabled, and create read replicas in us-central1, us-east1, and us-west1."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Deploy 4 Cloud SQL instances in the us-central1 region, and create read replicas in us-central1, us-east1 and us-west1."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are the DBA of an online tutoring application that runs on a Cloud SQL for PostgreSQL database. You are testing the implementation of the cross-regional failover configuration. The database in region R1 fails over successfully to region R2, and the database becomes available for the application to process data. During testing, certain scenarios of the application work as expected in region R2, but a few scenarios fail with database errors. The application-related database queries, when executed in isolation from Cloud SQL for PostgreSQL in region R2, work as expected. The application performs completely as expected when the database fails back to region R1. You need to identify the cause of the database errors in region R2. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Determine whether the versions of Cloud SQL for PostgreSQL in regions R1 and R2 are different."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Determine whether the database patches of Cloud SQI for PostgreSQL in regions R1 and R2 are different."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Determine whether the failover of Cloud SQL for PostgreSQL from region R1 to region R2 is in progress or has completed successfully."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Determine whether Cloud SQL for PostgreSQL in region R2 is a near-real-time copy of region R1 but not an exact copy."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are managing two different applications: Order Management and Sales Reporting. Both applications interact with the same Cloud SQL for MySQL database. The Order Management application reads and writes to the database 24/7, but the Sales Reporting application is read-only. Both applications need the latest data. You need to ensure that the Performance of the Order Management application is not affected by the Sales Reporting application. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Create a read replica for the Sales Reporting application."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Create two separate databases in the instance, and perform dual writes from the Order Management application."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use a Cloud SQL federated query for the Sales Reporting application."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Queue up all the requested reports in PubSub, and execute the reports at night."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are configuring a brand new PostgreSQL database instance in Cloud SQL. Your application team wants to have an optimal and highly available environment with automatic failover to avoid any unplanned outage. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Create one regional Cloud SQL instance with a read replica in another region."
+        },
+        {
+          "id": "B",
+          "isCorrect": true,
+          "text": "Create one regional Cloud SQL instance in one zone with a standby instance in another zone in the same region."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Create two read-write Cloud SQL instances in two different zones with a standby instance in another region."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Create two read-write Cloud SQL instances in two different regions with a standby instance in another zone."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are migrating a telehealth care company's on-premises data center to Google Cloud. The migration plan specifies:\nPostgreSQL databases must be migrated to a multi-region backup configuration with cross-region replicas to allow restore and failover in multiple scenarios.\nMySQL databases handle personally identifiable information (PII) and require data residency compliance at the regional level.\nYou want to set up the environment with minimal administrative effort. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Set up Cloud Logging and Cloud Monitoring with Cloud Functions to send an alert every time a new database instance is created, and manually validate the region."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Set up different organizations for each database type, and apply policy constraints at the organization level."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Set up Pub/Sub to ingest data from Cloud Logging, send an alert every time a new database instance is created, and manually validate the region."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Set up different projects for PostgreSQL and MySQL databases, and apply organizational policy constraints at a project level."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your project is using Bigtable to store data that should not be accessed from the public internet under any circumstances, even if the requestor has a valid service account key. You need to secure access to this data. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use Identity and Access Management (IAM) for Bigtable access control."
+        },
+        {
+          "id": "B",
+          "isCorrect": true,
+          "text": "Use VPC Service Controls to create a trusted network for the Bigtable service."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use customer-managed encryption keys (CMEK)."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use Google Cloud Armor to add IP addresses to an allowlist."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your organization has strict policies on tracking rollouts to production and periodically shares this information with external auditors to meet compliance requirements. You need to enable auditing on several Cloud Spanner databases. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use replication to roll out changes to higher environments."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use backup and restore to roll out changes to higher environments."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Use Liquibase to roll out changes to higher environments."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Manually capture detailed DBA audit logs when changes are rolled out to higher environments."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are managing multiple applications connecting to a database on Cloud SQL for PostgreSQL. You need to be able to monitor database performance to easily identify applications with long-running and resource-intensive queries. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use log messages produced by Cloud SQL."
+        },
+        {
+          "id": "B",
+          "isCorrect": true,
+          "text": "Use Query Insights for Cloud SQL."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use the Cloud Monitoring dashboard with available metrics from Cloud SQL."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use Cloud SQL instance monitoring in the Google Cloud Console."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You recently launched a new product to the US market. You currently have two Bigtable clusters in one US region to serve all the traffic. Your marketing team is planning an immediate expansion to APAC. You need to roll out the regional expansion while implementing high availability according to Google-recommended practices. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Maintain a target of 23% CPU utilization by locating:\ncluster-a in zone us-central1-a\ncluster-b in zone europe-west1-d\ncluster-c in zone asia-east1-b"
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Maintain a target of 23% CPU utilization by locating:\ncluster-a in zone us-central1-a\ncluster-b in zone us-central1-b\ncluster-c in zone us-east1-a"
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Maintain a target of 35% CPU utilization by locating:\ncluster-a in zone us-central1-a\ncluster-b in zone australia-southeast1-a\ncluster-c in zone europe-west1-d\ncluster-d in zone asia-east1-b"
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Maintain a target of 35% CPU utilization by locating:\ncluster-a in zone us-central1-a\ncluster-b in zone us-central2-a\ncluster-c in zone asia-northeast1-b\ncluster-d in zone asia-east1-b"
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your team recently released a new version of a highly consumed application to accommodate additional user traffic. Shortly after the release, you received an alert from your production monitoring team that there is consistently high replication lag between your primary instance and the read replicas of your Cloud SQL for MySQL instances. You need to resolve the replication lag. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Identify and optimize slow running queries, or set parallel replication flags."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Stop all running queries, and re-create the replicas."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Edit the primary instance to upgrade to a larger disk, and increase vCPU count."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Edit the primary instance to add additional memory."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are designing for a write-heavy application. During testing, you discover that the write workloads are performant in a regional Cloud Spanner instance but slow down by an order of magnitude in a multi-regional instance. You want to make the write workloads faster in a multi-regional instance. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Place the bulk of the read and write workloads closer to the default leader region."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use staleness of at least 15 seconds."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Add more read-write replicas."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Keep the total CPU utilization under 45% in each region."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You need to provision several hundred Cloud SQL for MySQL instances for multiple project teams over a one-week period. You must ensure that all instances adhere to company standards such as instance naming conventions, database flags, and tags. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Automate instance creation by writing a Dataflow job."
+        },
+        {
+          "id": "B",
+          "isCorrect": true,
+          "text": "Automate instance creation by setting up Terraform scripts."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Create the instances using the Google Cloud Console UI."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Create clones from a template Cloud SQL instance."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You use Python scripts to generate weekly SQL reports to assess the state of your databases and determine whether you need to reorganize tables or run statistics. You want to automate this report but need to minimize operational costs and overhead. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Create a VM in Compute Engine, and run a cron job."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Create a Cloud Composer instance, and create a directed acyclic graph (DAG)."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Create a Cloud Function, and call the Cloud Function using Cloud Scheduler."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Create a Cloud Function, and call the Cloud Function from a Cloud Tasks queue."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your company is shutting down their on-premises data center and migrating their Oracle databases using Oracle Real Application Clusters (RAC) to Google Cloud. You want minimal to no changes to the applications during the database migration. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Migrate the Oracle databases to Cloud Spanner."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Migrate the Oracle databases to Compute Engine."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Migrate the Oracle databases to Cloud SQL."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Migrate the Oracle databases to Bare Metal Solution for Oracle."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your organization has hundreds of Cloud SQL for MySQL instances. You want to follow Google-recommended practices to optimize platform costs. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use Query Insights to identify idle instances."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Remove inactive user accounts."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Run the Recommender API to identify overprovisioned instances."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Build indexes on heavily accessed tables."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your team is running a Cloud SQL for MySQL instance with a 5 TB database that must be available 24/7. You need to save database backups on object storage with minimal operational overhead or risk to your production workloads. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Use Cloud SQL serverless exports."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Create a read replica, and then use the mysqldump utility to export each table."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Clone the Cloud SQL instance, and then use the mysqldump utlity to export the data."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use the mysqldump utility on the primary database instance to export the backup."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You work for a financial services company that wants to use fully managed database services. Traffic volume for your consumer services products has increased annually at a constant rate with occasional spikes around holidays. You frequently need to upgrade the capacity of your database. You want to use Cloud Spanner and include an automated method to increase your hardware capacity to support a higher level of concurrency. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Use linear scaling to implement the Autoscaler-based architecture"
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use direct scaling to implement the Autoscaler-based architecture."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Upgrade the Cloud Spanner instance on a periodic basis during the scheduled maintenance window."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Set up alerts that are triggered when Cloud Spanner utilization metrics breach the threshold, and then schedule an upgrade during the scheduled maintenance window."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your organization is running a critical production database on a virtual machine (VM) on Compute Engine. The VM has an ext4-formatted persistent disk for data files. The database will soon run out of storage space. You need to implement a solution that avoids downtime. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "In the Google Cloud Console, increase the size of the persistent disk, and use the resize2fs command to extend the disk."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "In the Google Cloud Console, increase the size of the persistent disk, and use the fdisk command to verify that the new space is ready to use"
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "In the Google Cloud Console, create a snapshot of the persistent disk, restore the snapshot to a new larger disk, unmount the old disk, mount the new disk, and restart the database service."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "In the Google Cloud Console, create a new persistent disk attached to the VM, and configure the database service to move the files to the new disk."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are configuring the networking of a Cloud SQL instance. The only application that connects to this database resides on a Compute Engine VM in the same project as the Cloud SQL instance. The VM and the Cloud SQL instance both use the same VPC network, and both have an external (public) IP address and an internal (private) IP address. You want to improve network security. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Disable and remove the internal IP address assignment."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Disable both the external IP address and the internal IP address, and instead rely on Private Google Access."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Specify an authorized network with the CIDR range of the VM."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Disable and remove the external IP address assignment."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are a DBA of Cloud SQL for PostgreSQL. You want the applications to have password-less authentication for read and write access to the database. Which authentication mechanism should you use?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Use Identity and Access Management (IAM) authentication."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use Managed Active Directory authentication."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use Cloud SQL federated queries."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use PostgreSQL database's built-in authentication."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your company's mission-critical, globally available application is supported by a Cloud Spanner database. Experienced users of the application have read and write access to the database, but new users are assigned read-only access to the database. You need to assign the appropriate Cloud Spanner Identity and Access Management (IAM) role to new users being onboarded soon. What roles should you set up?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "roles/spanner.databaseReader"
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "roles/spanner.databaseUser"
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "roles/spanner.viewer"
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "roles/spanner.backupWriter"
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your DevOps team is using Terraform to deploy applications and Cloud SQL databases. After every new application change is rolled out, the environment is torn down and recreated, and the persistent database layer is lost. You need to prevent the database from being dropped. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Set Terraform deletion_protection to true."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Rerun terraform apply."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Create a read replica."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use point-in-time-recovery (PITR) to recover the database."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your organization is currently updating an existing corporate application that is running in another public cloud to access managed database services in Google Cloud. The application will remain in the other public cloud while the database is migrated to Google Cloud. You want to follow Google-recommended practices for authentication. You need to minimize user disruption during the migration. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Use workload identity federation to impersonate a service account."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Ask existing users to set their Google password to match their corporate password."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Migrate the application to Google Cloud, and use Identity and Access Management (IAM)."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use Google Workspace Password Sync to replicate passwords into Google Cloud."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your organization works with sensitive data that requires you to manage your own encryption keys. You are working on a project that stores that data in a Cloud SQL database. You need to ensure that stored data is encrypted with your keys. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Export data periodically to a Cloud Storage bucket protected by Customer-Supplied Encryption Keys."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use Cloud SQL Auth proxy."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Connect to Cloud SQL using a connection that has SSL encryption."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Use customer-managed encryption keys with Cloud SQL."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You have an application that sends banking events to Bigtable cluster-a in us-east. You decide to add cluster-b in us-central1. Cluster-a replicates data to cluster-b. You need to ensure that Bigtable continues to accept read and write requests if one of the clusters becomes unavailable and that requests are routed automatically to the other cluster. What deployment strategy should you use?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use the default app profile with single-cluster routing."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use the default app profile with multi-cluster routing."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Create a custom app profile with multi-cluster routing."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Create a custom app profile with single-cluster routing."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You manage a production MySQL database running on Cloud SQL at a retail company. You perform routine maintenance on Sunday at midnight when traffic is slow, but you want to skip routine maintenance during the year-end holiday shopping season. You need to ensure that your production system is available 24/7 during the holidays. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Define a maintenance window on Sundays between 12 AM and 1 AM, and deny maintenance periods between November 1 and January 15."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Define a maintenance window on Sundays between 12 AM and 5 AM, and deny maintenance periods between November 1 and February 15."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Build a Cloud Composer job to start a maintenance window on Sundays between 12 AM and 1AM, and deny maintenance periods between November 1 and January 15."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Create a Cloud Scheduler job to start maintenance at 12 AM on Sundays. Pause the Cloud Scheduler job between November 1 and January 15."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are the primary DBA of a Cloud SQL for PostgreSQL database that supports 6 enterprise applications in production. You used Cloud SQL Insights to identify inefficient queries and now need to identify the application that is originating the inefficient queries. You want to follow Google-recommended practices. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Shut down and restart each application."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Write a utility to scan database query logs."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Write a utility to scan application logs."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Use query tags to add application-centric database monitoring."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your organization is running a Firestore-backed Firebase app that serves the same top ten news stories on a daily basis to a large global audience. You want to optimize content delivery while decreasing cost and latency. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Enable serializable isolation in the Firebase app."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Deploy a US multi-region Firestore location."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Build a Firestore bundle, and deploy bundles to Cloud CDN."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Create a Firestore index on the news story date."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your organization has an existing app that just went viral. The app uses a Cloud SQL for MySQL backend database that is experiencing slow disk performance while using hard disk drives (HDDs). You need to improve performance and reduce disk I/O wait times. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Export the data from the existing instance, and import the data into a new instance with solid-state drives (SSDs)."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Edit the instance to change the storage type from HDD to SSD."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Create a high availability (HA) failover instance with SSDs, and perform a failover to the new instance."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Create a read replica of the instance with SSDs, and perform a failover to the new instance"
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are troubleshooting a connection issue with a newly deployed Cloud SQL instance on Google Cloud. While investigating the Cloud SQL Proxy logs, you see the message Error 403: Access Not Configured. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Check the app.yaml value cloud_sql_instances for a misspelled or incorrect instance connection name."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Check whether your service account has cloudsql.instances.connect permission."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Enable the Cloud SQL Admin API."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Ensure that you are using an external (public) IP address interface."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You work in the logistics department. Your data analysis team needs daily extracts from Cloud SQL for MySQL to train a machine learning model. The model will be used to optimize next-day routes. You need to export the data in CSV format. You want to follow Google-recommended practices. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use Cloud Scheduler to trigger a Cloud Function that will run a select * from table(s) query to call the cloudsql.instances.export API."
+        },
+        {
+          "id": "B",
+          "isCorrect": true,
+          "text": "Use Cloud Scheduler to trigger a Cloud Function through Pub/Sub to call the cloudsql.instances.export API."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use Cloud Composer to orchestrate an export by calling the cloudsql.instances.export API."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use Cloud Composer to execute a select * from table(s) query and export results."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your hotel booking company is expanding into Country A, where personally identifiable information (PII) must comply with regional data residency requirements and audits. You need to isolate customer data in Country A from the rest of the customer data. You want to design a multi-tenancy strategy to efficiently manage costs and operations. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Apply a schema data management pattern."
+        },
+        {
+          "id": "B",
+          "isCorrect": true,
+          "text": "Apply an instance data management pattern."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Apply a table data management pattern."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Apply a database data management pattern."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are writing an application that will run on Cloud Run and require a database running in the Cloud SQL managed service. You want to secure this instance so that it only receives connections from applications running in your VPC environment in Google Cloud. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "1. Create your instance with a specified external (public) IP address.\n2. Choose the VPC and create firewall rules to allow only connections from Cloud Run into your instance.\n3. Use Cloud SQL Auth proxy to connect to the instance."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "1. Create your instance with a specified external (public) IP address.\n2. Choose the VPC and create firewall rules to allow only connections from Cloud Run into your instance.\n3. Connect to the instance using a connection pool to best manage connections to the instance."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "1. Create your instance with a specified internal (private) IP address.\n2. Choose the VPC with private service connection configured.\n3. Configure the Serverless VPC Access connector in the same VPC network as your Cloud SQL instance.\n4. Use Cloud SQL Auth proxy to connect to the instance."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "1. Create your instance with a specified internal (private) IP address.\n2. Choose the VPC with private service connection configured.\n3. Configure the Serverless VPC Access connector in the same VPC network as your Cloud SQL instance.\n4. Connect to the instance using a connection pool to best manage connections to the instance."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You want to migrate your PostgreSQL database from another cloud provider to Cloud SQL. You plan on using Database Migration Service and need to assess the impact of any known limitations. What should you do? (Choose two.)",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Identify whether the database has over 512 tables."
+        },
+        {
+          "id": "B",
+          "isCorrect": true,
+          "text": "Identify all tables that do not have a primary key."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Identity all tables that do not have at least one foreign key."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Identify whether the source database is encrypted using pgcrypto extension."
+        },
+        {
+          "id": "E",
+          "isCorrect": true,
+          "text": "Identify whether the source database uses customer-managed encryption keys (CMEK)."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your online delivery business that primarily serves retail customers uses Cloud SQL for MySQL for its inventory and scheduling application. The required recovery time objective (RTO) and recovery point objective (RPO) must be in minutes rather than hours as a part of your high availability and disaster recovery design. You need a high availability configuration that can recover without data loss during a zonal or a regional failure. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Set up all read replicas in a different region using asynchronous replication."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Set up all read replicas in the same region as the primary instance with synchronous replication."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Set up read replicas in different zones of the same region as the primary instance with synchronous replication, and set up read replicas in different regions with asynchronous replication."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Set up read replicas in different zones of the same region as the primary instance with asynchronous replication, and set up read replicas in different regions with synchronous replication."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your organization is running a low-latency reporting application on Microsoft SQL Server. In addition to the database engine, you are using SQL Server Analysis Services (SSAS), SQL Server Reporting Services (SSRS), and SQL Server Integration Services (SSIS) in your on-premises environment. You want to migrate your Microsoft SQL Server database instances to Google Cloud. You need to ensure minimal disruption to the existing architecture during migration. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Migrate to Cloud SQL for SQL Server."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Migrate to Cloud SQL for PostgreSQL."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Migrate to Compute Engine."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Migrate to Google Kubernetes Engine (GKE)."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your company is developing a global ecommerce website on Google Cloud. Your development team is working on a shopping cart service that is durable and elastically scalable with live traffic. Business disruptions from unplanned downtime are expected to be less than 5 minutes per month. In addition, the application needs to have very low latency writes. You need a data storage solution that has high write throughput and provides 99.99% uptime. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use Cloud SQL for data storage."
+        },
+        {
+          "id": "B",
+          "isCorrect": true,
+          "text": "Use Cloud Spanner for data storage."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use Memorystore for data storage."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use Bigtable for data storage."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are managing a mission-critical Cloud SQL for PostgreSQL instance. Your application team is running important transactions on the database when another DBA starts an on-demand backup. You want to verify the status of the backup. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Check the cloudsql.googleapis.com/postgres.log instance log."
+        },
+        {
+          "id": "B",
+          "isCorrect": true,
+          "text": "Perform the gcloud sql operations list command."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use Cloud Audit Logs to verify the status."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use the Google Cloud Console."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your company uses the Cloud SQL out-of-disk recommender to analyze the storage utilization trends of production databases over the last 30 days. Your database operations team uses these recommendations to proactively monitor storage utilization and implement corrective actions. You receive a recommendation that the instance is likely to run out of disk space. What should you do to address this storage alert?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Normalize the database to the third normal form."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Compress the data using a different compression algorithm."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Manually or automatically increase the storage capacity."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Create another schema to load older data."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your company uses Bigtable for a user-facing application that displays a low-latency real-time dashboard. You need to recommend the optimal storage type for this read-intensive database. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Recommend solid-state drives (SSD)."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Recommend splitting the Bigtable instance into two instances in order to load balance the concurrent reads."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Recommend hard disk drives (HDD)."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Recommend mixed storage types."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are evaluating Cloud SQL for PostgreSQL as a possible destination for your on-premises PostgreSQL instances. Geography is becoming increasingly relevant to customer privacy worldwide. Your solution must support data residency requirements and include a strategy to: configure where data is stored control where the encryption keys are stored govern the access to data\nWhat should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Replicate Cloud SQL databases across different zones."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Create a Cloud SQL for PostgreSQL instance on Google Cloud for the data that does not need to adhere to data residency requirements. Keep the data that must adhere to data residency requirements on-premises. Make application changes to support both databases."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Allow application access to data only if the users are in the same region as the Google Cloud region for the Cloud SQL for PostgreSQL database."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Use features like customer-managed encryption keys (CMEK), VPC Service Controls, and Identity and Access Management (IAM) policies."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your company is shutting down their data center and migrating several MySQL and PostgreSQL databases to Google Cloud. Your database operations team is severely constrained by ongoing production releases and the lack of capacity for additional on-premises backups. You want to ensure that the scheduled migrations happen with minimal downtime and that the Google Cloud databases stay in sync with the on-premises data changes until the applications can cut over.\n\nWhat should you do? (Choose two.)",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use an external read replica to migrate the databases to Cloud SQL."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use a read replica to migrate the databases to Cloud SQL."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Use Database Migration Service to migrate the databases to Cloud SQL."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use a cross-region read replica to migrate the databases to Cloud SQL."
+        },
+        {
+          "id": "E",
+          "isCorrect": true,
+          "text": "Use replication from an external server to migrate the databases to Cloud SQL."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are designing an augmented reality game for iOS and Android devices. You plan to use Cloud Spanner as the primary backend database for game state storage and player authentication. You want to track in-game rewards that players unlock at every stage of the game. During the testing phase, you discovered that costs are much higher than anticipated, but the query response times are within the SLA. You want to follow Google-recommended practices. You need the database to be performant and highly available while you keep costs low. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Manually scale down the number of nodes after the peak period has passed."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use interleaving to co-locate parent and child rows."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use the Cloud Spanner query optimizer to determine the most efficient way to execute the SQL query."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Use granular instance sizing in Cloud Spanner and Autoscaler."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are managing a Cloud SQL for PostgreSQL instance in Google Cloud. You have a primary instance in region 1 and a read replica in region 2. After a failure of region 1, you need to make the Cloud SQL instance available again. You want to minimize data loss and follow Google-recommended practices. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Restore the Cloud SQL instance from the automatic backups in region 3."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Restore the Cloud SQL instance from the automatic backups in another zone in region 1."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Check \"Lag Bytes\" in the monitoring dashboard for the primary instance in the read replica instance. Check the replication status using pg_catalog.pg_last_wal_receive_lsn(). Then, fail over to region 2 by promoting the read replica instance."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Check your instance operational log for the automatic failover status. Look for time, type, and status of the operations. If the failover operation is successful, no action is necessary. Otherwise, manually perform gcloud sql instances failover ."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You need to issue a new server certificate because your old one is expiring. You need to avoid a restart of your Cloud SQL for MySQL instance. What should you do in your Cloud SQL instance?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Issue a rollback, and download your server certificate."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Create a new client certificate, and download it."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Create a new server certificate, and download it."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Reset your SSL configuration, and download your server certificate."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your organization operates in a highly regulated industry. Separation of concerns (SoC) and security principle of least privilege (PoLP) are critical. The operations team consists of:\nPerson A is a database administrator.\nPerson B is an analyst who generates metric reports.\nApplication C is responsible for automatic backups.\nYou need to assign roles to team members for Cloud Spanner. Which roles should you assign?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "roles/spanner.databaseAdmin for Person A\nroles/spanner.databaseReader for Person B\nroles/spanner.backupWriter for Application C"
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "roles/spanner.databaseAdmin for Person A\nroles/spanner.databaseReader for Person B\nroles/spanner.backupAdmin for Application C"
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "roles/spanner.databaseAdmin for Person A\nroles/spanner.databaseUser for Person B\nroles/spanner databaseReader for Application C"
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "roles/spanner.databaseAdmin for Person A\nroles/spanner.databaseUser for Person B\nroles/spanner.backupWriter for Application C"
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You have a large Cloud SQL for PostgreSQL instance. The database instance is not mission-critical, and you want to minimize operational costs. What should you do to lower the cost of backups in this environment?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Set the automated backups to occur every other day to lower the frequency of backups."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Change the storage tier of the automated backups from solid-state drive (SSD) to hard disk drive (HDD)."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Select a different region to store your backups."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Reduce the number of automated backups that are retained to two (2)."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are designing a database strategy for a new web application in one region. You need to minimize write latency. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use Cloud SQL with cross-region replicas."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use high availability (HA) Cloud SQL with multiple zones."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use zonal Cloud SQL without high availability (HA)."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Use Cloud Spanner in a regional configuration."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your team is building a new inventory management application that will require read and write database instances in multiple Google Cloud regions around the globe. Your database solution requires 99.99% availability and global transactional consistency. You need a fully managed backend relational database to store inventory changes. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use Bigtable."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use Firestore."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use Cloud SQL for MySQL"
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Use Cloud Spanner."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are migrating an on-premises application to Google Cloud. The application requires a high availability (HA) PostgreSQL database to support business-critical functions. Your company's disaster recovery strategy requires a recovery time objective (RTO) and recovery point objective (RPO) within 30 minutes of failure. You plan to use a Google Cloud managed service. What should you do to maximize uptime for your application?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Deploy Cloud SQL for PostgreSQL in a regional configuration. Create a read replica in a different zone in the same region and a read replica in another region for disaster recovery."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Deploy Cloud SQL for PostgreSQL in a regional configuration with HA enabled. Take periodic backups, and use this backup to restore to a new Cloud SQL for PostgreSQL instance in another region during a disaster recovery event."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Deploy Cloud SQL for PostgreSQL in a regional configuration with HA enabled. Create a cross-region read replica, and promote the read replica as the primary node for disaster recovery."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Migrate the PostgreSQL database to multi-regional Cloud Spanner so that a single region outage will not affect your application. Update the schema to support Cloud Spanner data types, and refactor the application."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are running an instance of Cloud Spanner as the backend of your ecommerce website. You learn that the quality assurance (QA) team has doubled the number of their test cases. You need to create a copy of your Cloud Spanner database in a new test environment to accommodate the additional test cases. You want to follow Google-recommended practices. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use Cloud Functions to run the export in Avro format."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use Cloud Functions to run the export in text format."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Use Dataflow to run the export in Avro format."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use Dataflow to run the export in text format."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are migrating your data center to Google Cloud. You plan to migrate your applications to Compute Engine and your Oracle databases to Bare Metal Solution for Oracle. You must ensure that the applications in different projects can communicate securely and efficiently with the Oracle databases. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Set up a Shared VPC, configure multiple service projects, and create firewall rules."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Set up Serverless VPC Access."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Set up Private Service Connect."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Set up Traffic Director."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are starting a large CSV import into a Cloud SQL for MySQL instance that has many open connections. You checked memory and CPU usage, and sufficient resources are available. You want to follow Google-recommended practices to ensure that the import will not time out. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Close idle connections or restart the instance before beginning the import operation."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Increase the amount of memory allocated to your instance."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Ensure that the service account has the Storage Admin role."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Increase the number of CPUs for the instance to ensure that it can handle the additional import operation."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You released a popular mobile game and are using a 50 TB Cloud Spanner instance to store game data in a PITR-enabled production environment. When you analyzed the game statistics, you realized that some players are exploiting a loophole to gather more points to get on the leaderboard. Another DBA accidentally ran an emergency bugfix script that corrupted some of the data in the production environment. You need to determine the extent of the data corruption and restore the production environment. What should you do? (Choose two.)",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "If the corruption is significant, use backup and restore, and specify a recovery timestamp."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "If the corruption is significant, perform a stale read and specify a recovery timestamp. Write the results back."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "If the corruption is significant, use import and export."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "If the corruption is insignificant, use backup and restore, and specify a recovery timestamp."
+        },
+        {
+          "id": "E",
+          "isCorrect": true,
+          "text": "If the corruption is insignificant, perform a stale read and specify a recovery timestamp. Write the results back."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are building an Android game that needs to store data on a Google Cloud serverless database. The database will log user activity, store user preferences, and receive in-game updates. The target audience resides in developing countries that have intermittent internet connectivity. You need to ensure that the game can synchronize game data to the backend database whenever an internet network is available. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Use Firestore."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use Cloud SQL with an external (public) IP address."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use an in-app embedded database."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use Cloud Spanner."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You need to migrate existing databases from Microsoft SQL Server 2016 Standard Edition on a single Windows Server 2019 Datacenter Edition to a single Cloud SQL for SQL Server instance. During the discovery phase of your project, you notice that your on-premises server peaks at around 25,000 read IOPS. You need to ensure that your Cloud SQL instance is sized appropriately to maximize read performance. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Create a SQL Server 2019 Standard on Standard machine type with 4 vCPUs, 15 GB of RAM, and 800 GB of solid-state drive (SSD)."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Create a SQL Server 2019 Standard on High Memory machine type with at least 16 vCPUs, 104 GB of RAM, and 200 GB of SSD."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Create a SQL Server 2019 Standard on High Memory machine type with 16 vCPUs, 104 GB of RAM, and 4 TB of SSD."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Create a SQL Server 2019 Enterprise on High Memory machine type with 16 vCPUs, 104 GB of RAM, and 500 GB of SSD."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your company wants to migrate its MySQL, PostgreSQL, and Microsoft SQL Server on-premises databases to Google Cloud. You need a solution that provides near-zero downtime, requires no application changes, and supports change data capture (CDC). What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use the native export and import functionality of the source database."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Create a database on Google Cloud, and use database links to perform the migration."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Create a database on Google Cloud, and use Dataflow for database migration."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Use Database Migration Service."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are running a large, highly transactional application on Oracle Real Application Cluster (RAC) that is multi-tenant and uses shared storage. You need a solution that ensures high-performance throughput and a low-latency connection between applications and databases. The solution must also support existing Oracle features and provide ease of migration to Google Cloud. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Migrate to Compute Engine."
+        },
+        {
+          "id": "B",
+          "isCorrect": true,
+          "text": "Migrate to Bare Metal Solution for Oracle."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Migrate to Google Kubernetes Engine (GKE)"
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Migrate to Google Cloud VMware Engine"
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your organization needs to migrate a critical, on-premises MySQL database to Cloud SQL for MySQL. The on-premises database is on a version of MySQL that is supported by Cloud SQL and uses the InnoDB storage engine. You need to migrate the database while preserving transactions and minimizing downtime. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "1. Use Database Migration Service to connect to your on-premises database, and choose continuous replication.\n2. After the on-premises database is migrated, promote the Cloud SQL for MySQL instance, and connect applications to your Cloud SQL instance."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "1. Build a Cloud Data Fusion pipeline for each table to migrate data from the on-premises MySQL database to Cloud SQL for MySQL.\n2. Schedule downtime to run each Cloud Data Fusion pipeline.\n3. Verify that the migration was successful.\n4. Re-point the applications to the Cloud SQL for MySQL instance."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "1. Pause the on-premises applications.\n2. Use the mysqldump utility to dump the database content in compressed format.\n3. Run gsutil –m to move the dump file to Cloud Storage.\n4. Use the Cloud SQL for MySQL import option.\n5. After the import operation is complete, re-point the applications to the Cloud SQL for MySQL instance."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "1 Pause the on-premises applications.\n2. Use the mysqldump utility to dump the database content in CSV format.\n3. Run gsutil –m to move the dump file to Cloud Storage.\n4. Use the Cloud SQL for MySQL import option.\n5. After the import operation is complete, re-point the applications to the Cloud SQL for MySQL instance."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You finished migrating an on-premises MySQL database to Cloud SQL. You want to ensure that the daily export of a table, which was previously a cron job running on the database server, continues. You want the solution to minimize cost and operations overhead. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Use Cloud Scheduler and Cloud Functions to run the daily export."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Create a streaming Datatlow job to export the table."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Set up Cloud Composer, and create a task to export the table daily."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Run the cron job on a Compute Engine instance to continue the export."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your ecommerce application connecting to your Cloud SQL for SQL Server is expected to have additional traffic due to the holiday weekend. You want to follow Google-recommended practices to set up alerts for CPU and memory metrics so you can be notified by text message at the first sign of potential issues. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use a Cloud Function to pull CPU and memory metrics from your Cloud SQL instance and to call a custom service to send alerts."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use Error Reporting to monitor CPU and memory metrics and to configure SMS notification channels."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use Cloud Logging to set up a log sink for CPU and memory metrics and to configure a sink destination to send a message to Pub/Sub."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Use Cloud Monitoring to set up an alerting policy for CPU and memory metrics and to configure SMS notification channels."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your company is developing a new global transactional application that must be ACID-compliant and have 99.999% availability. You are responsible for selecting the appropriate Google Cloud database to serve as a datastore for this new application. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use Firestore."
+        },
+        {
+          "id": "B",
+          "isCorrect": true,
+          "text": "Use Cloud Spanner."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use Cloud SQL."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use Bigtable."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are responsible for designing a new database for an airline ticketing application in Google Cloud. This application must be able to:\nWork with transactions and offer strong consistency.\nWork with structured and semi-structured (JSON) data.\nScale transparently to multiple regions globally as the operation grows.\nYou need a Google Cloud database that meets all the requirements of the application. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use Cloud SQL for PostgreSQL with both cross-region read replicas."
+        },
+        {
+          "id": "B",
+          "isCorrect": true,
+          "text": "Use Cloud Spanner in a multi-region configuration."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use Firestore in Datastore mode."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use a Bigtable instance with clusters in multiple regions."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your ecommerce website captures user clickstream data to analyze customer traffic patterns in real time and support personalization features on your website. You plan to analyze this data using big data tools. You need a low-latency solution that can store 8 TB of data and can scale to millions of read and write requests per second. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Write your data into Bigtable and use Dataproc and the Apache Hbase libraries for analysis."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Deploy a Cloud SQL environment with read replicas for improved performance. Use Datastream to export data to Cloud Storage and analyze with Dataproc and the Cloud Storage connector."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use Memorystore to handle your low-latency requirements and for real-time analytics."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Stream your data into BigQuery and use Dataproc and the BigQuery Storage API to analyze large volumes of data."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your organization has a busy transactional Cloud SQL for MySQL instance. Your analytics team needs access to the data so they can build monthly sales reports. You need to provide data access to the analytics team without adversely affecting performance. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Create a read replica of the database, provide the database IP address, username, and password to the analytics team, and grant read access to required tables to the team."
+        },
+        {
+          "id": "B",
+          "isCorrect": true,
+          "text": "Create a read replica of the database, enable the cloudsql.iam_authentication flag on the replica, and grant read access to required tables to the analytics team."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Enable the cloudsql.iam_authentication flag on the primary database instance, and grant read access to required tables to the analytics team."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Provide the database IP address, username, and password of the primary database instance to the analytics, team, and grant read access to required tables to the team."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your company wants to migrate an Oracle-based application to Google Cloud. The application team currently uses Oracle Recovery Manager (RMAN) to back up the database to tape for long-term retention (LTR). You need a cost-effective backup and restore solution that meets a 2-hour recovery time objective (RTO) and a 15-minute recovery point objective (RPO). What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Migrate the Oracle databases to Bare Metal Solution for Oracle, and store backups on tapes on-premises."
+        },
+        {
+          "id": "B",
+          "isCorrect": true,
+          "text": "Migrate the Oracle databases to Bare Metal Solution for Oracle, and use Actifio to store backup files on Cloud Storage using the Nearline Storage class."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Migrate the Oracle databases to Bare Metal Solution for Oracle, and back up the Oracle databases to Cloud Storage using the Standard Storage class."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Migrate the Oracle databases to Compute Engine, and store backups on tapes on-premises."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are deploying a new Cloud SQL instance on Google Cloud using the Cloud SQL Auth proxy. You have identified snippets of application code that need to access the new Cloud SQL instance. The snippets reside and execute on an application server running on a Compute Engine machine. You want to follow Google-recommended practices to set up Identity and Access Management (IAM) as quickly and securely as possible. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "For each application code, set up a common shared user account."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "For each application code, set up a dedicated user account."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "For the application server, set up a service account."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "For the application server, set up a common shared user account."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are designing a payments processing application on Google Cloud. The application must continue to serve requests and avoid any user disruption if a regional failure occurs. You need to use AES-256 to encrypt data in the database, and you want to control where you store the encryption key. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Use Cloud Spanner with a customer-managed encryption key (CMEK)."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use Cloud Spanner with default encryption."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use Cloud SQL with a customer-managed encryption key (CMEK)."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use Bigtable with default encryption."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your company wants you to migrate their Oracle, MySQL, Microsoft SQL Server, and PostgreSQL relational databases to Google Cloud. You need a fully managed, flexible database solution when possible. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Migrate all the databases to Cloud SQL."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Migrate the Oracle, MySQL, and Microsoft SQL Server databases to Cloud SQL, and migrate the PostgreSQL databases to Compute Engine."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Migrate the MySQL, Microsoft SQL Server, and PostgreSQL databases to Compute Engine, and migrate the Oracle databases to Bare Metal Solution for Oracle."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Migrate the MySQL, Microsoft SQL Server, and PostgreSQL databases to Cloud SQL, and migrate the Oracle databases to Bare Metal Solution for Oracle."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You plan to use Database Migration Service to migrate data from a PostgreSQL on-premises instance to Cloud SQL. You need to identify the prerequisites for creating and automating the task. What should you do? (Choose two.)",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Drop or disable all users except database administration users."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Disable all foreign key constraints on the source PostgreSQL database."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Ensure that all PostgreSQL tables have a primary key."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Shut down the database before the Data Migration Service task is started."
+        },
+        {
+          "id": "E",
+          "isCorrect": true,
+          "text": "Ensure that pglogical is installed on the source PostgreSQL database."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your customer is running a MySQL database on-premises with read replicas. The nightly incremental backups are expensive and add maintenance overhead. You want to follow Google-recommended practices to migrate the database to Google Cloud, and you need to ensure minimal downtime. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Create a Google Kubernetes Engine (GKE) cluster, install MySQL on the cluster, and then import the dump file."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use the mysqldump utility to take a backup of the existing on-premises database, and then import it into Cloud SQL."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Create a Compute Engine VM, install MySQL on the VM, and then import the dump file."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Create an external replica, and use Cloud SQL to synchronize the data to the replica."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You manage a meeting booking application that uses Cloud SQL. During an important launch, the Cloud SQL instance went through a maintenance event that resulted in a downtime of more than 5 minutes and adversely affected your production application. You need to immediately address the maintenance issue to prevent any unplanned events in the future. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": true,
+          "text": "Set your production instance's maintenance window to non-business hours."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Migrate the Cloud SQL instance to Cloud Spanner to avoid any future disruptions due to maintenance."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Contact Support to understand why your Cloud SQL instance had a downtime of more than 5 minutes."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use Cloud Scheduler to schedule a maintenance window of no longer than 5 minutes."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You want to migrate an on-premises mission-critical PostgreSQL database to Cloud SQL. The database must be able to withstand a zonal failure with less than five minutes of downtime and still not lose any transactions. You want to follow Google-recommended practices for the migration. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Take nightly snapshots of the primary database instance, and restore them in a secondary zone."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Build a change data capture (CDC) pipeline to read transactions from the primary instance, and replicate them to a secondary instance."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Create a read replica in another region, and promote the read replica if a failure occurs."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Enable high availability (HA) for the database to make it regional."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are building an application that allows users to customize their website and mobile experiences. The application will capture user information and preferences. User profiles have a dynamic schema, and users can add or delete information from their profile. You need to ensure that user changes automatically trigger updates to your downstream BigQuery data warehouse. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Store your data in Bigtable, and use the user identifier as the key. Use one column family to store user profile data, and use another column family to store user preferences."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use Cloud SQL, and create different tables for user profile data and user preferences from your recommendations model. Use SQL to join the user profile data and preferences"
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Use Firestore in Native mode, and store user profile data as a document. Update the user profile with preferences specific to that user and use the user identifier to query."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Use Firestore in Datastore mode, and store user profile data as a document. Update the user profile with preferences specific to that user and use the user identifier to query."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You need to migrate a 1 TB PostgreSQL database from a Compute Engine VM to Cloud SQL for PostgreSQL. You want to ensure that there is minimal downtime during the migration. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Export the data from the existing database, and load the data into a new Cloud SQL database."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use Migrate for Compute Engine to complete the migration."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use Datastream to complete the migration."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Use Database Migration Service to complete the migration."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You need to perform a one-time migration of data from a running Cloud SQL for MySQL instance in the us-central1 region to a new Cloud SQL for MySQL instance in the us-east1 region. You want to follow Google-recommended practices to minimize performance impact on the currently running instance. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Create and run a Dataflow job that uses JdbcIO to copy data from one Cloud SQL instance to another."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Create two Datastream connection profiles, and use them to create a stream from one Cloud SQL instance to another."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Create a SQL dump file in Cloud Storage using a temporary instance, and then use that file to import into a new instance."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Create a CSV file by running the SQL statement SELECT...INTO OUTFILE, copy the file to a Cloud Storage bucket, and import it into a new instance."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your company uses Cloud Spanner for a mission-critical inventory management system that is globally available. You recently loaded stock keeping unit (SKU) and product catalog data from a company acquisition and observed hotspots in the Cloud Spanner database. You want to follow Google-recommended schema design practices to avoid performance degradation. What should you do? (Choose two.)",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use an auto-incrementing value as the primary key."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Normalize the data model."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Promote low-cardinality attributes in multi-attribute primary keys."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Promote high-cardinality attributes in multi-attribute primary keys."
+        },
+        {
+          "id": "E",
+          "isCorrect": true,
+          "text": "Use bit-reverse sequential value as the primary key."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "Your company is migrating all legacy applications to Google Cloud. All on-premises applications are using legacy Oracle 12c databases with Oracle Real Application Cluster (RAC) for high availability (HA) and Oracle Data Guard for disaster recovery. You need a solution that requires minimal code changes, provides the same high availability you have today on-premises, and supports a low latency network for migrated legacy applications. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Migrate the databases to Cloud Spanner."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Migrate the databases to Cloud SQL, and enable a standby database."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Migrate the databases to Compute Engine using regional persistent disks."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Migrate the databases to Bare Metal Solution for Oracle."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are migrating an on-premises application to Compute Engine and Cloud SQL. The application VMs will live in their own project, separate from the Cloud SQL instances which have their own project. What should you do to configure the networks?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Create a new VPC network in each project, and use VPC Network Peering to connect the two together."
+        },
+        {
+          "id": "B",
+          "isCorrect": true,
+          "text": "Create a Shared VPC that both the application VMs and Cloud SQL instances will use."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use the default networks, and leverage Cloud VPN to connect the two together."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Place both the application VMs and the Cloud SQL instances in the default network of each project."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are managing a small Cloud SQL instance for developers to do testing. The instance is not critical and has a recovery point objective (RPO) of several days. You want to minimize ongoing costs for this instance. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Take no backups, and turn off transaction log retention."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Take one manual backup per day, and turn off transaction log retention."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Turn on automated backup, and turn off transaction log retention."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Turn on automated backup, and turn on transaction log retention."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are choosing a database backend for a new application. The application will ingest data points from IoT sensors. You need to ensure that the application can scale up to millions of requests per second with sub-10ms latency and store up to 100 TB of history. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Use Cloud SQL with read replicas for throughput."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Use Firestore, and rely on automatic serverless scaling."
+        },
+        {
+          "id": "C",
+          "isCorrect": false,
+          "text": "Use Memorystore for Memcached, and add nodes as necessary to achieve the required throughput."
+        },
+        {
+          "id": "D",
+          "isCorrect": true,
+          "text": "Use Bigtable, and add nodes as necessary to achieve the required throughput."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are configuring a new application that has access to an existing Cloud Spanner database. The new application reads from this database to gather statistics for a dashboard. You want to follow Google-recommended practices when granting Identity and Access Management (IAM) permissions. What should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Reuse the existing service account that populates this database."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Create a new service account, and grant it the Cloud Spanner Database Admin role."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Create a new service account, and grant it the Cloud Spanner Database Reader role."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Create a new service account, and grant it the spanner.databases.select permission."
+        }
+      ],
+      "explanation": ""
+    },
+    {
+      "text": "You are a DBA on a Cloud Spanner instance with multiple databases. You need to assign these privileges to all members of the application development team on a specific database:\n\nCan read tables, views, and DDL -\n\nCan write rows to the tables -\n\nCan add columns and indexes -\n\nCannot drop the database -\nWhat should you do?",
+      "examId": "professional-cloud-database-engineer",
+      "id": "",
+      "options": [
+        {
+          "id": "A",
+          "isCorrect": false,
+          "text": "Assign the Cloud Spanner Database Reader and Cloud Spanner Backup Writer roles."
+        },
+        {
+          "id": "B",
+          "isCorrect": false,
+          "text": "Assign the Cloud Spanner Database Admin role."
+        },
+        {
+          "id": "C",
+          "isCorrect": true,
+          "text": "Assign the Cloud Spanner Database User role."
+        },
+        {
+          "id": "D",
+          "isCorrect": false,
+          "text": "Assign the Cloud Spanner Admin role."
+        }
+      ],
+      "explanation": ""
+    }
+  ]
+  
