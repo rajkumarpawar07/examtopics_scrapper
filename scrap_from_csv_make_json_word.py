@@ -11,9 +11,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from docx import Document
 
 # File paths
-CSV_PATH = "./professional-machine-learning-engineer.csv"
-WORD_DOC_PATH = "Professional Machine Learning Engineer.docx"
-JSON_PATH = "Professional Machine Learning Engineer.json"
+CSV_PATH = "./professional-cloud-security-engineer.csv"
+WORD_DOC_PATH = "Professional Cloud Security Engineer.docx"
+JSON_PATH = "Professional Cloud Security Engineer.json"
 EDGEDRIVER_PATH = "./msedgedriver.exe"
 
 # Initialize output
@@ -100,7 +100,7 @@ def extract_question_data(driver, url, index):
 
         question_json = {
             "text": question_text,
-            "examId": "professional-machine-learning-engineer",
+            "examId": "professional-cloud-security-engineer",
             "id": "",
             "options": options_json,
             "explanation": ""
