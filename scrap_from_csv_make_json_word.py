@@ -11,15 +11,15 @@ from selenium.webdriver.support import expected_conditions as EC
 from docx import Document
 
 # File paths
-CSV_PATH = "./terraform-associate.csv"
-WORD_DOC_PATH = "Terraform Associate.docx"
-JSON_PATH = "Terraform Associate.json"
+CSV_PATH = "./az-104.csv"
+WORD_DOC_PATH = "Azure Administrator Associate.docx"
+JSON_PATH = "Azure Administrator Associate.json"
 EDGEDRIVER_PATH = "./msedgedriver.exe"
 
 # Initialize output
 json_data = []
 doc = Document()
-doc.add_heading("HashiCorp's Terraform Associate Actual Exam Questions", 0)
+doc.add_heading("Azure Administrator Associate Actual Exam Questions", 0)
 
 # Setup Edge WebDriver
 def setup_driver():
@@ -100,7 +100,7 @@ def extract_question_data(driver, url, index):
 
         question_json = {
             "text": question_text,
-            "examId": "terraform-associate",
+            "examId": "azure-administrator-associate",
             "id": "",
             "options": options_json,
             "explanation": ""
